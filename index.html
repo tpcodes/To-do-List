@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/25b021be14.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box1" id="heading">
+        <h1 >TO DO LIST</h1>
+       
+        
+    </div>
+   
+    <div class="box" id="heading">
+       
+        <h1 id="date"></h1>
+        
+    </div>
+   
+    
+    <div class="box" style="margin-top: -50px;">
+      
+        
+          
+                <div class="item" id="myItems">
+                   
+                    
+                </div>
+                
+     
+           
+         
+            <div id="newEntry">
+                <input type="text" name="newitem" placeholder="New Item" autocomplete="off" id="item">
+                <button type="submit" name="list" class="button" id="Add">+</button>
+            </div>
+               
+          
+        
+    </div>
+
+
+<script>
+  
+    document.querySelector("#Add").onclick=function(){
+        if(document.querySelector('#newEntry input').value.length==0)
+        {
+            alert("Enter Valid Entry.....")
+        }
+        else{
+            document.querySelector('#myItems').innerHTML+=`
+            <div class="item">
+              
+                    
+                <span class="itemname">
+                    ${document.querySelector('#newEntry input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+                
+              
+
+
+
+            </div>
+
+            
+            `;
+            
+            var All_entries = document.querySelectorAll(".delete");
+        for(var i=0; i<All_entries.length; i++){
+            All_entries[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    function getDate()
+    {
+    let today=new Date();
+    let options=
+    {
+    weekday:"long",
+    day:'numeric',
+    month:"long"
+    }
+    let day=today.toLocaleString("en-US",options)
+    return day;
+
+    }
+    document.getElementById("date").innerHTML=getDate();
+
+</script>
+</body>
+<footer>
+    copyright:2022 Tushar
+</footer>
+</html>
