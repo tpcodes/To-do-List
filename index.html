@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO LIST</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/25b021be14.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="box1" id="heading">
         <h1 >TO DO LIST</h1>
-       
         
     </div>
-   
+
     <div class="box" id="heading">
        
         <h1 id="date"></h1>
@@ -24,23 +23,15 @@
     
     <div class="box" style="margin-top: -50px;">
       
-        
-          
-                <div class="item" id="myItems">
+            <div class="item" id="myItems">
                    
                     
-                </div>
-                
-     
-           
-         
+            </div>
+
             <div id="newEntry">
                 <input type="text" name="newitem" placeholder="New Item" autocomplete="off" id="item">
                 <button type="submit" name="list" class="button" id="Add">+</button>
             </div>
-               
-          
-        
     </div>
 
 
@@ -62,38 +53,18 @@
                 <button class="delete">
                     <i class="far fa-trash-alt"></i>
                 </button>
-                
-              
-
-
-
-            </div>
-
-            
-            `;
+            </div>`
+            ;
             
             var All_entries = document.querySelectorAll(".delete");
-        for(var i=0; i<All_entries.length; i++){
+            for(var i=0; i<All_entries.length; i++){
             All_entries[i].onclick = function(){
                 this.parentNode.remove();
             }
         }
-
-
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
     function getDate()
     {
