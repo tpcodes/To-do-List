@@ -33,17 +33,13 @@ html {
   
   .item {
     min-height: 50px;
-    /* display: flex; */
+
     align-items: center;
     border-bottom: 1px solid #F1F1F1;
-    /* padding:20px 0 ; */
+   
     vertical-align: middle;
     font-size: 25px;
   }
-  /* .inner-item
-  {
-
-  } */
   .itemname
   {
     padding:20px;
@@ -98,7 +94,6 @@ html {
     background-color: #A683E3;
     color: #fff;
     font-size: 30px;
-    /* padding-bottom: 4px; */
     border-width: 0;
     position: relative;
     top: 4px;
@@ -143,11 +138,4 @@ html {
     justify-content: space-between;
     border: 1px solid #939697;
     cursor: pointer;
-}
-.item
-{
-
-
-
-  
 }
