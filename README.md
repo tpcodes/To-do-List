@@ -1,6 +1,6 @@
 # To-do-List
 
-************************************************ Internship Assignment : TUSHAR PANDEY *************************************************
+************************************************ Project : TUSHAR PANDEY *************************************************
 
 DESCRIPTION: This is the PROJECT SOLUTION to the To do List . 
 
